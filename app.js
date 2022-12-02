@@ -1,3 +1,5 @@
+let user= [];
+
 Users = () => {
     class User {
     constructor(firstname, lastname, age, city){
@@ -8,11 +10,25 @@ Users = () => {
     }
 }
 
-for (let i = 0; i < 4; i++ ){
-    let user = prompt('Type your first name, last name, age, city');
-    console.log(user);
-    user[i] = new User(`${user[0]},${user[1]},${user[2]},${user[3]},${user[4]} `)
+for (var i = 0; i < 4; i++ ){
+    let userhbf = prompt('Type your first name');
+    console.log(userhbf)
+    let userhbf = prompt('Type your last name');
+    console.log(userhbf)
+    let userhbf = prompt('Type your age');
+    console.log(userhbf)
+    let userhbf = prompt('Type your city');
+    console.log(userhbf)
+
+    
+    user[i] = new User(`${userhbf[0]} ,${userhbf[1]}, ${userhbf[2]}, ${userhbf[3]}, ${userhbf[4]} `)
+    console.log(user[i]);
 }
 
+}
 
-console.log(Users)
+console.log(user)
+
+Users();
+
+
